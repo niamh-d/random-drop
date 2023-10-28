@@ -86,15 +86,15 @@ const juniorLearnersArr = new Array();
 // using a function
 const allocateLearner = (learner) => {
   if (!learner.age) return "No age provided.";
-  let allocatedArr;
+  let group;
   if (learner.age >= 18) {
     adultLearnersArr.push(learner);
-    allocatedArr = "Adult Learners Group";
+    group = "Adult Learners Group";
   } else {
     juniorLearnersArr.push(learner);
-    allocatedArr = "Junior Learners Group";
+    group = "Junior Learners Group";
   }
-  return `Learner has been allocated to the ${allocatedArr}.`;
+  return `Learner has been allocated to the ${group}.`;
 };
 
 console.log(allocateLearner(removedPerson));
