@@ -74,7 +74,7 @@ const juniorLearnersArr = new Array();
 // console.log("Adults:", adultLearnersArr);
 // console.log("Juniors:", juniorLearnersArr);
 
-// Alternative (short circuiting and ternary)
+// Alternative (using ternary)
 // !removedPerson.age
 //   ? console.log("🛑 Error: No age provided!")
 //   : removedPerson.age >= 18
